@@ -52,7 +52,7 @@ int main()
   // Estrustura
   while (dia != 0)
   {
-    cout << "Ingrese el dia del mes (0 para salir): ";
+    cout << "Ingrese el dia del mes 1 a 30 (0 para salir): ";
     cin >> dia;
 
     if (dia == 0)
