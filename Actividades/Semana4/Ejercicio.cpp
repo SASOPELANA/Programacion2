@@ -16,7 +16,7 @@ using namespace std;
 
 int main() {
 
-  const int VALOR_INCREMENTO = 5;
+  const int VALOR_INCREMENTO = 50;
   int incrementador = 0;
   int cant_incrementos = 0;
   bool incremento;
