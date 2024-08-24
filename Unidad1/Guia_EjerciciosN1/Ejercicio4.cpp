@@ -92,7 +92,6 @@ int main()
   cout << "El animal mas adoptado es: " << tipoAnimalMax << ". Tipo "
        << maxAnimal << endl;
 
-
   // Punto B~
   cout << "\nPromedio de edad de los adoptantes: " << endl;
   float promedioEdad = 0.0;
@@ -102,7 +101,9 @@ int main()
     {
       promedioEdad = (float)acuEdad[x] / adopciones[x];
       cout << "Tipo de animal: " << x + 10 << " - Promedio de edad del adoptante: " << promedioEdad << endl;
-    }else{
+    }
+    else
+    {
       cout << "Tipo de animal: " << x + 10 << " - No hay adopciones registradas." << endl;
     }
   }
@@ -110,13 +111,13 @@ int main()
   // Punto C
   cout << "\nCantidad de adopciones por tipo de animal y tipo de vivienda: " << endl;
   for (int x = 0; x < 6; x++)
+  {
+    cout << "Tipo de animal " << x + 10 << " (" << AnimalMaxAdoptado(x + 10) << "):" << endl;
+    for (int j = 0; j < 5; j++)
     {
-        cout << "Tipo de animal " << x + 10 << " (" << AnimalMaxAdoptado(x + 10) << "):" << endl;
-        for (int j = 0; j < 5; j++)
-        {
-            cout << "  Vivienda tipo " << j + 1 << ": " << matAdoVviendas[x][j] << " adopciones" << endl;
-        }
+      cout << "  Vivienda tipo " << j + 1 << ": " << matAdoVviendas[x][j] << " adopciones" << endl;
     }
+  }
 
   return 0;
 }
