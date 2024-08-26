@@ -44,8 +44,9 @@ int main() {
 
     cout << "\nVector dinamico de numeros positivos --> [" << positivo << "]."
          << endl;
+    cout << "\n";
     for (int i = 0; i < positivo; i++) {
-      cout << pPosi[i] << endl;
+      cout << "[" << pPosi[i] << "] ";
     }
   } else {
     cout << "\nNo se ingresaron numeros postivos al Array.\n";
@@ -66,21 +67,24 @@ int main() {
     // Guardamos los numeros negativos en el vector dinamico
     int con = 0; // reiniciamos el contador
     for (int x = 0; x < 10; x++) {
-      if (vec[x] <= 0) {
+      if (vec[x] < 0) {
         pNega[con] = vec[x];
         con++;
       }
     }
 
+    cout << "\n";
     cout << "\nVector dinamico de numeros negativos --> [" << negativo << "]."
          << endl;
+    cout << "\n";
     for (int i = 0; i < negativo; i++) {
-      cout << pNega[i] << endl;
+      cout << "[" << pNega[i] << "] ";
     }
   } else {
-    cout << "\nNo se ingresaron numeros negativos al Array.\n";
+    cout << "\n\nNo se ingresaron numeros negativos al Array.";
   }
 
+  cout << "\n";
   cout << "\nFin del programa.\n";
 
   // Liberamos memoria.
@@ -110,7 +114,7 @@ int PositivoNegativo(int v[], int &positivo) {
   for (int x = 0; x < 10; x++) {
     if (v[x] > 0) {
       positivo++;
-    } else {
+    } else if (v[x] < 0) {
       negativo++;
     }
   }
