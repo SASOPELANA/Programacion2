@@ -5,6 +5,7 @@
 class Incrementador{
 /// Propiedades
 private:
+    // Al ver un guion bajo_ en el incio de una variable, hace referencia a una propiedad privada de la clase
   int _valorActual;
   int _valorIncremento;
   int _cantidadIncrementos;
