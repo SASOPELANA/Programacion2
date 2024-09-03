@@ -28,6 +28,7 @@ int main() {
     area1.setRectangulo(b,a);
     peri1.setRectangulo(b,a);
 
+    // metodo get, para obtener y mostrar los valores de los atributos
     cout << "\nEl area del rectangulo es: " << area1.getCalcularArea() << endl;
     cout << "El perimetro del rectangulo es: " << peri1.getCalcularPerimetro() << endl;
 
